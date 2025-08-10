@@ -6,7 +6,7 @@ Este projeto é um dashboard interativo e completo para a análise de dados do f
 
 O dashboard permite uma exploração rica e dinâmica dos dados de vendas, clientes, performance geográfica e satisfação, culminando em um modelo de previsão de vendas futuras.
 
-**➡️ Link para o App em funcionamento:** `[COLOQUE AQUI O LINK DO SEU APP PUBLICADO NO STREAMLIT COMMUNITY CLOUD]`
+**➡️ Link para o App em funcionamento:** `https://dashboardolist-ma6osezh6t8drdkger3nvu.streamlit.app/`
 
 ## ✨ Features Principais
 
