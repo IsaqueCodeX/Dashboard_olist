@@ -1,0 +1,65 @@
+/* style.css - Versão Final Definitiva */
+
+/* --- Estrutura Principal e Fundo --- */
+body,
+section.main > div {
+  background-color: #0e1117;
+}
+
+/* --- Títulos e Textos Principais --- */
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+p {
+  text-align: center;
+}
+
+/* --- Remove header e footer do Streamlit --- */
+header,
+footer {
+  visibility: hidden;
+}
+
+/* --- Estrutura de "Cards" para Conteúdo --- */
+div[data-testid="stVerticalBlock"]
+  > div[style*="flex-direction: column;"]
+  > div[data-testid="stVerticalBlock"] {
+  border: 1px solid #333333;
+  background-color: #1c1c1e;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* --- Textos Dentro dos Cards --- */
+div[data-testid="stVerticalBlock"] h3,
+div[data-testid="stVerticalBlock"] h4 {
+  color: #ffd43b;
+  font-weight: bold;
+}
+
+/* --- KPIs --- */
+div[data-testid="stMetric"] {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+/* --- Estilização dos Botões de Filtro de Estado (MultiSelect) --- */
+span[data-baseweb="tag"] {
+  background-color: #3776ab !important; /* Fundo Azul Python */
+  border-radius: 5px !important;
+}
+span[data-baseweb="tag"] > span {
+  color: white !important; /* Texto branco */
+}
+span[data-baseweb="tag"] > span[role="button"] {
+  background-color: transparent !important; /* Remove qualquer fundo residual do 'x' */
+}
+span[data-baseweb="tag"] > span[role="button"]:hover {
+  background-color: #5c92c2 !important; /* Azul mais claro no hover, sem vermelho */
+}
+span[data-baseweb="tag"] > span[role="button"] svg {
+  fill: white !important; /* O 'x' fica branco */
+}
