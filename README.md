@@ -1,76 +1,100 @@
-# 📊 Dashboard de Análise de Vendas Olist
+# 📊 Dashboard de Análise de Vendas — Olist
 
-## 🚀 Resumo do Projeto
+Um **dashboard interativo e completo** para análise do famoso dataset da **Olist**, um dos maiores marketplaces do Brasil.  
+Desenvolvido após a **Imersão Dados da Alura**, este projeto aplica conhecimentos de **Python, Análise de Dados, Visualização e Machine Learning** para transformar dados brutos em insights de negócio.
 
-Este projeto é um dashboard interativo e completo para a análise de dados do famoso dataset da Olist, um dos maiores marketplaces do Brasil. Desenvolvido como projeto de estudo após a **Imersão Dados da Alura**, o objetivo foi aplicar e aprofundar conhecimentos em Python para análise de dados, desde a manipulação e limpeza até a criação de uma aplicação web de Business Intelligence com funcionalidades de Machine Learning.
+**🔗 Acesse o dashboard:** [dashboardolist-ma6osezh6t8drdkger3nvu.streamlit.app](https://dashboardolist-ma6osezh6t8drdkger3nvu.streamlit.app/)
 
-O dashboard permite uma exploração rica e dinâmica dos dados de vendas, clientes, performance geográfica e satisfação, culminando em um modelo de previsão de vendas futuras.
+---
 
-**➡️ Link para o App em funcionamento:** `https://dashboardolist-ma6osezh6t8drdkger3nvu.streamlit.app/`
+## 🚀 Objetivos do Projeto
+- Explorar e visualizar dados de vendas da Olist.
+- Identificar padrões de comportamento de clientes e desempenho de produtos.
+- Analisar performance geográfica de vendas.
+- Utilizar **Machine Learning (Prophet)** para previsão de receita futura.
+- Criar uma **aplicação web de Business Intelligence** interativa e acessível.
 
-## ✨ Features Principais
+---
 
-O dashboard é dividido em quatro seções principais, acessíveis por um menu de navegação:
+## ✨ Funcionalidades
 
-- **Visão Geral:** Apresenta os KPIs (Key Performance Indicators) mais importantes, como receita total, número de pedidos e clientes únicos. Inclui gráficos sobre a evolução da receita mensal e o ranking das categorias de produtos mais vendidas.
+O dashboard é dividido em **4 seções principais**:
 
-- **Análise Geográfica:** Uma central interativa para explorar o desempenho das vendas por todo o Brasil. O usuário pode selecionar diferentes métricas (Receita Total, Ticket Médio, Nº de Pedidos) para visualizar tanto em um mapa coroplético quanto em um gráfico de ranking dos Top 5 estados.
+1. **📈 Visão Geral**  
+   - KPIs: receita total, número de pedidos e clientes únicos.  
+   - Evolução mensal da receita.  
+   - Ranking das categorias mais vendidas.
 
-- **Análise de Clientes:** Foco no comportamento e satisfação do consumidor, apresentando um funil de vendas (desde a criação do pedido até a entrega) e um gráfico com a distribuição das notas de avaliação (reviews).
+2. **🗺️ Análise Geográfica**  
+   - Mapa interativo por estado.  
+   - Métricas: Receita Total, Ticket Médio e Nº de Pedidos.  
+   - Ranking dos Top 5 estados.
 
-- **🤖 Previsão de Vendas (IA):** O grande diferencial! Utilizando a biblioteca `Prophet` do Meta, esta seção apresenta um modelo de forecasting que prevê a receita total para os próximos 12 meses, com base em todo o histórico de dados.
+3. **👥 Análise de Clientes**  
+   - Funil de vendas: pedido → entrega.  
+   - Distribuição das notas de avaliação (reviews).
 
-### Screenshots
+4. **🤖 Previsão de Vendas (IA)**  
+   - Modelo de forecasting com **Prophet (Meta)**.  
+   - Projeção da receita para os próximos 12 meses.
 
-|                              Tela Principal                              |                          Previsão de Vendas com IA                           |
-| :----------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+---
+
+## 📷 Prévia do Projeto
+
+| Tela Principal | Previsão de Vendas |
+| --- | --- |
 | ![Screenshot da Tela Principal](https://i.postimg.cc/cJN5D5QB/image.png) | ![Screenshot da Previsão de Vendas](https://i.postimg.cc/dQX6HxFZ/image.png) |
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-Este projeto foi construído utilizando um ecossistema de ferramentas modernas de Data Science em Python:
+- **Python 3**
+- **Pandas** — Manipulação e análise de dados  
+- **Plotly Express** — Visualizações interativas  
+- **Streamlit** — Dashboard web  
+- **Streamlit Option Menu** — Navegação customizada  
+- **Prophet (Meta)** — Previsão de séries temporais  
+- **CSS Customizado** — Tema escuro e visual profissional  
 
-- **Linguagem:** Python 3
-- **Manipulação de Dados:** Pandas
-- **Visualização de Dados:** Plotly Express
-- **Dashboard Interativo:** Streamlit
-- **Componentes de UI:** Streamlit Option Menu
-- **Machine Learning (Forecasting):** Prophet (do Meta)
-- **Estilização:** CSS customizado para um tema escuro e profissional.
+---
 
-## ⚙️ Como Executar o Projeto Localmente
+## ⚙️ Como Executar Localmente
 
-Para rodar este projeto na sua máquina, siga os passos abaixo:
+```bash
+# 1. Clone o repositório
+git clone https://github.com/IsaqueCodeX/Dashboard_olist.git
+cd Dashboard_olist
 
-1.  **Clone o repositório:**
+# 2. Crie e ative o ambiente virtual
+python -m venv venv
+# Windows
+.env\Scriptsctivate
+# macOS / Linux
+source venv/bin/activate
 
-    ```bash
-    git clone [https://github.com/IsaqueCodeX/Dashboard_olist.git](https://github.com/IsaqueCodeX/Dashboard_olist.git)
-    cd Dashboard_olist
-    ```
+# 3. Instale as dependências
+pip install -r requirements.txt
 
-2.  **Crie e ative um ambiente virtual:**
+# 4. Execute a aplicação
+streamlit run app.py
+```
+> Certifique-se de que todos os arquivos de dados (`.csv` e `br_states.json`) estejam na mesma pasta que o `app.py`.
 
-    ```bash
-    python -m venv venv
-    # Windows
-    .\venv\Scripts\activate
-    # macOS / Linux
-    source venv/bin/activate
-    ```
-
-3.  **Instale as dependências:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Execute a aplicação:**
-    ```bash
-    streamlit run app.py
-    ```
-    _Certifique-se de que todos os arquivos de dados (`.csv` e `br_states.json`) estão na mesma pasta que o `app.py`._
+---
 
 ## 🙏 Agradecimentos
 
-Gostaria de agradecer à **Alura** pela incrível **Imersão Dados**, que foi o ponto de partida e a principal fonte de inspiração para este projeto. O conhecimento adquirido durante o evento foi fundamental para a sua realização.
+Agradecimentos à **Alura** pela excelente **Imersão de Dados com Python**, que inspirou e forneceu a base para o desenvolvimento deste projeto.  
+
+---
+
+## 📌 Próximos Passos
+- Adicionar filtros dinâmicos por período e categoria.  
+- Incluir análise de correlação entre variáveis.  
+- Melhorar a responsividade para dispositivos móveis.  
+
+---
+
+Se você gostou do projeto, ⭐ **star no repositório** e contribua! 🚀
